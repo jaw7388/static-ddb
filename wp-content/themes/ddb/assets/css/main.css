@@ -1,0 +1,183 @@
+@charset "UTF-8";
+#preloader {position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: #fff;z-index: 99999;}
+#status {width: 150px;height: 150px;position: absolute;left: 45%;top: 45%;background-image: url("http://ddb.test/wp-content/uploads/2020/06/spinner.gif");z-index: 9999;background-repeat: no-repeat;background-position: center;background-size: contain,cover;}
+@media screen and (min-width: 990px) {.sticky {position: fixed;width: 100%;top: 0;transition: position .7s ease;background: #fff !important;box-shadow: 0px 6px 11px rgba(33,33,33,.53);}
+	.sticky .container .collapse nav > ul > li > a {transition: padding .5s ease;padding: 2.5em 1em;}
+	.sticky .container .navbar-brand img {transition: max-height .3s ease-out;max-height: 50px;padding: 0px 0px;}
+	.sticky-search {top: 80px !important;}
+	header {background: #fff;position: relative;width: 100%;padding-left: 2em;padding-right: 2em;border-bottom: 2px solid #b70817;box-shadow: 0px 6px 11px rgba(33,33,33,.53);z-index: 999;}
+	header .navbar {top: 0;transition: background-color .7s ease;background-color: rgba(93,93,93,0);margin: 0 -2em;padding: 0 1em;}
+	header .navbar .nav-logo {transition: max-height .2s ease-in;max-height: 70px;margin: .5em 0;}
+	header .navbar .navbar-nav .current-menu-item:not(:last-child) a {color: #b70817 !important;}
+	header .navbar .navbar-nav .nav-link {color: #646464;font-family: Lato;font-weight: 700;font-size: .8em;line-height: 1;text-transform: uppercase;padding: 3.5em 1em;transition: .5s;}
+	header .navbar .navbar-nav .nav-link:hover {color: #b70817;}
+	header .navbar .navbar-nav .nav-link:hover .dropdown-menu {display: block !important;}
+	header .navbar .navbar-nav > .menu-item-has-children {}
+	header .navbar .navbar-nav > .menu-item-has-children:hover > .dropdown-menu {display: block;opacity: 0;opacity: 1;-webkit-animation: fadein .5s;animation: fadein .5s;}
+	@keyframes fadein {from {opacity: 0;}
+		to {opacity: 1;}}
+	@-webkit-keyframes fadein {from {opacity: 0;}
+		to {opacity: 1;}}
+	header .navbar .navbar-nav > .menu-item-has-children .dropdown:hover .dropbtn {background-color: #2c2c2c;}
+	header .navbar .menu-item-has-children .dropdown-menu > .menu-item-has-children:hover > .dropdown-menu {display: block;}
+	header .navbar .dropdown-menu {margin-top: 0;font-family: Lato;font-weight: 400;letter-spacing: 0px;font-style: normal;text-transform: uppercase;font-size: 14px;background: rgba(239,239,239,.92);border-radius: 0;padding: 0px;}
+	header .navbar .dropdown-menu li a {padding: 1em;border-bottom: 1px solid #fff;}
+	header .navbar .dropdown-menu li a:hover {background: #dedede;color: #b70817;}
+	header .navbar .dropdown-menu .dropdown-menu {left: 100%;top: 0;}
+	header .search-button-main {margin-left: 1em;cursor: pointer;background: #b70817;color: #fff;height: 50px;width: 50px;}
+	header #search-form-main {display: none;}
+	header .search-form-main-display {display: block !important;position: absolute;top: 100px;right: 7em;height: 55px;border-radius: 0 0 5px 5px;padding: 5px 8px 0px 8px;background: #fff;-webkit-animation: search 1s;animation: search 1s;}
+	@-webkit-keyframes search {0% {opacity: 0;height: 0;}
+		25% {height: 55px;}
+		100% {opacity: 1;}}
+	@keyframes search {0% {opacity: 0;height: 0;}
+		25% {height: 55px;}
+		100% {opacity: 1;}}
+	.top-bar {background: #b70817;color: #fff;margin: 0 -3em;font-size: .8em;padding: 1em 2em 1em 0em;border-bottom: .5px solid rgba(255,255,255,.527);}
+	.top-bar a {color: #fff;text-decoration: none;}
+	.top-bar a:hover {color: #d6d6d6;}
+	.top-bar i {color: #fff;margin-right: 3px;}
+	.top-bar .header-social i {font-size: 1.5em;color: #fff !important;}
+	.top-bar .header-social i:hover {color: #b70817 !important;}}
+@media (max-width: 990px) and (min-width: 100px) {.nav-placeholder {display: none;}
+	#status {width: 100px;height: 100px;left: 40%;top: 40%;}
+	.top-bar {display: none;}
+	header {background: #fff;}
+	header .navbar {background-color: #fff !important;}
+	header .navbar .nav-logo {max-height: 90px;margin: .5em 0;}
+	header .navbar .navbar-collapse ul li {text-align: center;}}
+footer {background: #222;padding: 3em 0em;color: #fff;padding-bottom: 1em;}
+footer h3 {font-size: 2em;font-weight: 700;line-height: 1.3;}
+footer h3:after {transform: translateX(-50%);content: "";left: 50%;bottom: 0;position: absolute;width: 100px;height: 1px;background: #b70817;}
+footer h5 {border-bottom: 1px solid;padding-bottom: .5em;font-weight: bold;}
+footer p {line-height: 1.5;font-weight: 400;font-style: normal;font-size: 1.1em;margin-top: 1em;}
+footer i {font-size: 1em;margin-right: .5em;}
+footer .icon-text {font-weight: 400;line-height: 1.3;letter-spacing: 1px;font-style: normal;font-size: .8em;}
+footer ul {padding-left: 0;}
+footer li {list-style: none;padding: .5em 0em;}
+footer a {color: #fff;}
+footer a:hover {color: #b70817;text-decoration: none;}
+footer .footer-logo {max-height: 100px;}
+footer .social-footer {font-size: 2.5em;}
+footer .footer-copyright {font-size: .6em;margin-top: 4em;}
+@media (max-width: 990px) and (min-width: 100px) {footer .footer-logo {text-align: center;margin-bottom: 2em;}
+	footer div h5 {text-align: center;}
+	footer ul li {text-align: center;}}
+.slider-main {padding-left: 0px;padding-right: 0px;}
+.header-image {background-color: rgba(255,255,255,0);background-position: center center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;color: #fff;height: 100vh;}
+.slider-image-1 {background-image: linear-gradient(130deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,0) 75%),url("https://static9.depositphotos.com/1258191/1223/i/950/depositphotos_12233276-stock-photo-pharmacist-reaching-for-medicine.jpg");background-color: rgba(255,255,255,0);background-position: center center;background-repeat: no-repeat;background-size: cover;color: #fff;height: 70vh;}
+.slider-image-2 {background-image: linear-gradient(130deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,0) 75%),url("https://static9.depositphotos.com/1258191/1223/i/950/depositphotos_12233276-stock-photo-pharmacist-reaching-for-medicine.jpg");}
+.slider-image-3 {background-image: linear-gradient(130deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,0) 75%),url("https://static9.depositphotos.com/1258191/1223/i/950/depositphotos_12233276-stock-photo-pharmacist-reaching-for-medicine.jpg");}
+.header-sub-text {font-size: .8em;}
+.wrap-animation {-webkit-animation: fadein 1.5s;animation: fadein 1.5s;animation: fadein 1.5s;position: absolute;top: 110px;right: 10px;}
+@keyframes fadein {from {opacity: 0;transform: translateY(-15px);}
+	to {opacity: 1;transform: translateY(0);}}
+@-webkit-keyframes fadein {from {opacity: 0;transform: translateY(-15px);}
+	to {opacity: 1;transform: translateY(0);}}
+.header-message {background-position: left top;background-repeat: no-repeat;background-size: cover;height: auto;color: #fff;}
+.header-message h1 {font-family: Lato;font-weight: 700;line-height: 1.1;letter-spacing: -3px;font-style: normal;font-size: 3em;}
+.title-separator {border-bottom: 3px solid #b70817;}
+.section-with-background {padding: 4em 0em;color: #fff;}
+.section-with-background h3 {font-size: 2em;font-weight: 700;line-height: 1.3;}
+.section-with-background h3:after {transform: translateX(-50%);content: "";left: 50%;bottom: 0;position: absolute;width: 100px;height: 1px;background: #fff;}
+.section-with-background .description-text {margin-top: 2em;}
+.section-with-background p {line-height: 1.5;font-weight: 400;font-style: normal;font-size: 1.1em;margin-top: 1em;}
+.section-with-background .service {margin-top: 2em;}
+.section-with-background .service .far, .section-with-background .service .fas {font-size: 5em;}
+.section-with-background .icon-text {font-weight: 400;line-height: 1.3;letter-spacing: 1px;font-style: normal;font-size: .8em;}
+.section-main-products {padding: 3em 0em;background-image: url("../../../../uploads/2020/06/fondo-productos.jpg");background-position: center center;background-repeat: no-repeat;background-size: cover;}
+.section-main-products .portfolio-main-sections-text {position: absolute;bottom: 0;right: 0;width: 100%;height: 23%;text-align: center;background: rgba(31,31,31,.7);transition: height .2s ease-out;color: #fff;}
+.section-main-products .portfolio-main-sections-img {position: relative;overflow: hidden;}
+.section-main-products .portfolio-main-sections-img:hover > .portfolio-main-sections-text {height: 100%;}
+.section-main-products h3 {font-size: 2em;font-weight: 700;line-height: 1.3;}
+.section-main-products h3:after {transform: translateX(-50%);content: "";left: 50%;bottom: 0;position: absolute;width: 100px;height: 1px;background: #b70817;}
+.section-main-products p {line-height: 1.5;font-weight: 400;font-style: normal;font-size: 1.1em;margin-top: 1em;}
+.section-main-products i {font-size: 5em;}
+.section-main-products .icon-text {font-weight: 400;line-height: 1.3;letter-spacing: 1px;font-style: normal;font-size: .8em;}
+.section-testimonial {background-color: rgba(255,255,255,0);background-image: linear-gradient(340deg,rgba(0,0,0,.95) 0%,rgba(0,0,0,.3) 100%),url("https://wirxpharmacy.com/wp-content/uploads/2019/12/pharmacy-testimonial.jpg");background-position: center center;background-repeat: no-repeat;padding: 70px 30px;background-size: cover;background-attachment: fixed;}
+.home-products-wraper {margin-top: 3em;}
+.home-products-wraper a {margin-top: 2em;color: #000;}
+.home-products-wraper a img {transition: .1s ease-in-out;}
+.home-products-wraper a:hover img {transform: scale(.96);border-radius: 10px;}
+.home-products-wraper a:hover {color: #b70817;text-decoration: none;}
+@media (max-width: 990px) and (min-width: 100px) {.header-message-wrap {display: flex;justify-content: center;}
+	.header-message-wrap .header-message {padding: 50px 0px 20px;background-position: left top;background-repeat: no-repeat;background-size: cover;height: auto;text-align: center;}
+	.header-message-wrap .header-message h1 {font-family: Lato;font-weight: 700;line-height: 1.1;letter-spacing: -3px;font-style: normal;font-size: 3em;}
+	.section-with-background {padding: 3em 1em;}
+	.section-with-background .service {border: none !important;}}
+.hero-image-header {background: #b70817;background-image: linear-gradient(340deg,rgba(0,0,0,.95) 0%,rgba(0,0,0,.3) 100%),url("../../../../uploads/2020/06/cabecera3.jpg");background-position: center center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;color: #fff;}
+.page-hero-text {padding: 50px 0px 70px;background-position: left top;height: auto;}
+.page-hero-text h1 {font-size: 2.5em;text-transform: uppercase;font-weight: 700;}
+.page-hero-text h1:after {transform: translateX(-50%);content: "";left: 50%;bottom: 0;position: absolute;width: 10em;height: 2px;background: #b70817;}
+.page-section-title {font-size: 3rem;letter-spacing: -1px;font-weight: 700;}
+.section-nosotros {text-align: center;color: #858585;}
+.section-nosotros img {border-radius: 50%;max-height: 70px;}
+.principios-corporativos {background-image: linear-gradient(340deg,rgba(0,0,0,.95) 0%,rgba(0,0,0,.3) 100%),url("../../../../uploads/2020/06/ground-group-growth-hands-461049.jpg");background-position: center center;background-repeat: no-repeat;padding: 70px 30px;background-size: cover;background-attachment: fixed;color: #fff;}
+.principios-corporativos i {font-size: 3em;color: #ffe000;}
+.section-gestion-ambiental {background-image: url("../../../../uploads/2020/06/politica-ambiental.jpg");background-position: center center;background-size: cover;background-repeat: no-repeat;}
+.section-distribucion .distribution-elements-text {position: absolute;bottom: 0;right: 0;width: 100%;height: 35%;text-align: center;background: rgba(31,31,31,.7);transition: height .2s ease-out;color: #fff;}
+.section-distribucion .distribution-elements-img {position: relative;overflow: hidden;}
+.section-distribucion .distribution-elements-img:hover > .distribution-elements-text {height: 100%;}
+.section-compliance .compliance-elements-text {position: absolute;bottom: 0;right: 0;width: 100%;height: 35%;text-align: center;background: rgba(31,31,31,.7);transition: height .2s ease-out;color: #fff;}
+.section-compliance .compliance-elements-img {position: relative;overflow: hidden;}
+.section-compliance .compliance-elements-img:hover > .compliance-elements-text {height: 100%;}
+.section-trabaja-con-nosotros p {font-size: 1.5em;}
+@media (max-width: 990px) and (min-width: 100px) {.page-hero-text {padding: 100px 0px 70px;background-position: left top;height: auto;}
+	.page-hero-text h1 {font-size: 2em;text-align: center;}
+	.page-hero-text h1:after {width: 5em;}}
+.wpcf7 {font-family: "Open Sans Condensed",arial,sans;width: 100%;padding: 30px;background: #fff;margin: 0em auto;box-shadow: 0px 0px 15px rgba(0,0,0,.22);-moz-box-shadow: 0px 0px 15px rgba(0,0,0,.22);-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,.22);}
+.wpcf7 h2 {background: #4d4d4d;text-transform: uppercase;color: #797979;font-size: 18px;font-weight: 100;padding: 20px;margin: -30px -30px 30px -30px;}
+.wpcf7 input[type=text], .wpcf7 input[type=date], .wpcf7 input[type=datetime], .wpcf7 input[type=email], .wpcf7 input[type=number], .wpcf7 input[type=search], .wpcf7 input[type=time], .wpcf7 input[type=url], .wpcf7 input[type=password], .wpcf7 textarea, .wpcf7 select {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;outline: none;display: block;width: 100%;padding: 7px;border: none;border-bottom: 1px solid #b70817;background: transparent;margin-bottom: 10px;font: 16px Arial,Helvetica,sans-serif;height: 45px;}
+.wpcf7 textarea {overflow: hidden;}
+.wpcf7 input[type=button], .wpcf7 input[type=submit] {box-shadow: inset 0px 1px 0px 0px #b70817;background-color: #b70817;border: 1px solid #b70817;display: inline-block;cursor: pointer;color: #fff;font-family: "Open Sans Condensed",sans-serif;font-size: 14px;padding: 8px 18px;text-decoration: none;text-transform: uppercase;}
+.wpcf7 input[type=button]:hover, .wpcf7 input[type=submit]:hover {background-color: #000;border: 1px solid #000;box-shadow: inset 0px 1px 0px 0px #000;}
+.sprite-etica {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -610px -740px;}
+.sprite-cumplimiento-normativo {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -730px -985px;}
+.sprite-actuacion {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -855px -245px;}
+.sprite-reputacion {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -731px -735px;}
+.sprite-buenas-practicas {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -1220px -980px;}
+.sprite-comercializacion {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -490px -370px;}
+.sprite-distribucion {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -980px -1600px;}
+.sprite-capacitacion {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -1100px -490px;}
+.sprite-responsabilidad-social {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -1592px 5px;}
+.sprite-tiempo {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -850px -1355px;}
+.sprite-fecha {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -610px 0px;}
+.sprite-telefono {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -1100px -1100px;}
+.sprite-alianza {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -1710px -1230px;}
+.sprite-inventarios {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -610px -980px;}
+.sprite-soporte {width: 85px;height: 85px;background: url("../../../../uploads/2020/06/Pack-Iconos.png") -855px -735px;}
+.woocommerce .single-product {margin-top: 2em;}
+.woocommerce .single-product h1 {font-size: 1.5em;font-weight: 700;}
+.woocommerce .single-product .product .woocommerce-product-gallery {width: 35% !important;}
+.woocommerce .single-product .product .summary {width: 60% !important;}
+.woocommerce .single-product .product .summary .product_meta .posted_in {display: block;}
+.woocommerce .single-product .product .summary .product_meta span {font-weight: 700;}
+.woocommerce .single-product .product .summary .product_meta span a {color: #b70817 !important;}
+.woocommerce .single-product .product .summary .product_meta .wb-posted_in {margin-top: 0;}
+.woocommerce .single-product .product .summary .product_meta .wb-posted_in a {color: #b70817;}
+.woocommerce .single-product .product .summary .woocommerce-product-details__short-description {font-size: .8em;}
+.button.single_add_to_cart_button.button.alt {background-color: #b70817;}
+.button.single_add_to_cart_button.button.alt:hover {background-color: #1aa9b8;}
+.woocommerce .products {text-align: center;}
+.woocommerce .products .product {border: 1px solid #e2e2e2;padding: 11px 15px 14px 10px !important;transition: box-shadow .3s;transition: border .3s;}
+.woocommerce .products .product:hover {border: 1px solid #b70817;box-shadow: 0 0 11px rgba(33,33,33,.2);}
+.woocommerce .products .product span {text-align: center;}
+.woocommerce .products .product h2 {font-size: .8em !important;color: #646464;font-weight: 700;}
+.woocommerce-breadcrumb {font-size: .8em;padding: 10px 5px 20px;color: #646464;}
+.woocommerce-breadcrumb a {color: #646464 !important;}
+.woocommerce-billing-fields .form-row, .woocommerce-shipping-fields .form-row, .woocommerce form .form-row {display: block;}
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {ax-width: unset;}
+.widget_product_tag_cloud {font-size: 1.5em;list-style: none;}
+.widget_product_tag_cloud .tagcloud ul {list-style: none;-webkit-padding-start: 0;padding-inline-start: 0;}
+.widget_product_tag_cloud .tagcloud ul li {line-height: 1em;}
+.widget_product_tag_cloud a {color: #1aa9b8;}
+body {font-family: "Lato",sans-serif;}
+.background-redddb {background: #b70817;}
+.gray-hover-effect img {transition: all .2s;-webkit-transition: all .2s;-moz-transition: all .2s;filter: grayscale(100%);-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);}
+.gray-hover-effect img:hover {filter: grayscale(0%);-webkit-filter: grayscale(0%);-moz-filter: grayscale(0%);transform: scale(1.1);-webkit-transform: scale(1.1);-moz-transform: scale(1.1);}
+.redDdb-text {color: #b70817;}
+.remove-clearfix:after {content: none;}
+.remove-clearfix:before {content: none;}
+.list-arrow li {list-style: none;}
+.list-arrow li:before {content: "";display: inline-block;margin: 2px 5px 0 0;color: #b70817;font-family: "Font Awesome 5 Free";font-size: 24px;font-style: normal !important;font-weight: 400 !important;font-variant: normal !important;text-transform: none !important;speak: none;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;list-style-type: none !important;position: absolute;left: 40px;}
+.dgwt-wcas-search-wrapp {z-index: 999 !important;}
